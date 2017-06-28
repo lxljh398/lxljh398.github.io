@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Git 如何 clone 非 master 分支的代码"
+title:  "Git 如何 clone 非 master 分支的代码(转原博主HyG)"
+date:   2017-06-15 15:14:58
 categories: GitHub
 tags:  Git GitHub 分支
 ---

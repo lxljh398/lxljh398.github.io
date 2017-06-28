@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "JavaScript 中的闭包"
-date:   2015-06-14 14:06:05
+title:  "JavaScript 中的闭包(转原博主HyG)"
+date:   2017-06-15 14:06:05
 categories: JavaScript
 tags: JavaScript 闭包 慕课网 ife
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "如何使用 babel"
+title:  "如何使用 babel(转原博主HyG)"
+date:   2017-06-15 15:14:50
 categories: JavaScript
 tags:  ES2015 ES6 ES5 babel 
 ---

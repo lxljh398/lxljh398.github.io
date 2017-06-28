@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "使用 JavaScript 创建并下载文件"
+title:  "使用 JavaScript 创建并下载文件(转原博主HyG)"
+date:   2017-06-15 12:10:22
 categories: JavaScript
 tags:  文件 下载 JavaScript
 author: HyG

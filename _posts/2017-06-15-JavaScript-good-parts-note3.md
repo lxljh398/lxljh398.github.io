@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "JavaScript 语言精粹笔记3-方法、毒瘤等"
+title:  "JavaScript 语言精粹笔记3-方法、毒瘤等(转原博主HyG)"
+date:   2017-06-15 13:44:22
 categories: JavaScript
 tags:  函数 JavaScript
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "浅谈正则表达式中的分组和引用"
-date:   2016-05-06 11:40:18 +0800
+title:  "浅谈正则表达式中的分组和引用(转原博主HyG)"
+date:   2017-06-15 11:40:18
 categories: JavaScript
 tags: 正则 分组 Regular
 ---
