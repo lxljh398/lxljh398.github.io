@@ -13,17 +13,15 @@ type: page
 
 <iframe src="https://githubbadge.appspot.com/lxljh398?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 
+现实像块石头，精神像个蛋，石头虽然坚硬，可蛋里才是生命——崔健
 
-
-很喜欢崔健的歌词：现实像块石头，精神像个蛋，石头虽然坚硬，可蛋里才是生命。
-
-还有，学习是一个非常愉快的过程。共同加油！
+好说己长便是短，自知己短便是长——申居郧
 
 
 
 ## 联系我
 
-* GitHub：[Gaohaoyang](https://github.com/lxljh398)
+* GitHub：[fatso](https://github.com/lxljh398)
 * email：lxljh398@qq.com
 * [知乎](https://www.zhihu.com/people/lxljh398)
 * [Facebook](https://www.facebook.com/gaohaoyang.water)
