@@ -41,7 +41,7 @@ await代码中抛出异常后，异常会沿着Task方向前进到引用处
 
 ## 异步编程基础
 指数退避是一种重试策略，重试的延迟时间会逐 次增加。在访问 Web 服务时，最好的方式就是采用指数退避，它可以防止服务器被太多的重试阻塞
-```Asp.Net
+```java
 static async Task<string> DownloadStringWithRetries(string uri)
 {
     using (var client = new HttpClient())
@@ -75,7 +75,7 @@ Task.WhenAny可以等待任一任务完成，使用它虽然可以完成超时�
 
 ## 并行开发的基础
 Parallel 类有一个简单的成员 Invoke，可用于需要并行调用一批方法，并且这些方法（大部分）是互相独立的
-```Asp.Net
+```java
 static void ProcessArray(double[] array)
 {
     Parallel.Invoke(
