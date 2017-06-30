@@ -41,7 +41,7 @@ await代码中抛出异常后，异常会沿着Task方向前进到引用处
 
 ## 异步编程基础
 指数退避是一种重试策略，重试的延迟时间会逐 次增加。在访问 Web 服务时，最好的方式就是采用指数退避，它可以防止服务器被太多的重试阻塞
-
+```C#
 static async Task<string> DownloadStringWithRetries(string uri)
 {
     using (var client = new HttpClient())
@@ -65,7 +65,7 @@ static async Task<string> DownloadStringWithRetries(string uri)
         return await client.GetStringAsync(uri);
     }
 }
-
+```
 Task.Delay 适合用于对异步代码进行单元测试或者实现重试逻辑。要实现超时功能的话， 最好使用 CancellationToken
 如何实现一个具有异步签名的同步方法。如果从异步接口或基类继承代码，但希望用同步的方法来实现它，就会出现这种情况。解决办法是可以使用 Task.FromResult 方法创建并返回一个新的 Task 对象，这个 Task 对象是已经 完成的，并有指定的值
 使用 IProgress 和 Progress 类型。编写的 async 方法需要有 IProgress 参数，其 中 T 是需要报告的进度类型，可以展示操作的进度
@@ -75,7 +75,7 @@ Task.WhenAny可以等待任一任务完成，使用它虽然可以完成超时�
 
 ## 并行开发的基础
 Parallel 类有一个简单的成员 Invoke，可用于需要并行调用一批方法，并且这些方法（大部分）是互相独立的
-
+```C#
 static void ProcessArray(double[] array)
 {
     Parallel.Invoke(
@@ -87,7 +87,7 @@ static void ProcessPartialArray(double[] array, int begin, int end)
 {
     // 计算密集型的处理过程 ...  
 }
-
+```
 在并发编程中，Task类有两个作用：作为并行任务，或作为异步任务。并行任务可以使用 阻塞的成员函数，例如 Task.Wait、Task.Result、Task.WaitAll 和 Task.WaitAny。并行任务通常也使用 AttachedToParent 来建立任务之间的“父 / 子”关系。并行任务的创建需要 用 Task.Run 或者 Task.Factory.StartNew。
 相反的，异步任务应该避免使用阻塞的成员函数，而应该使用 await、Task.WhenAll 和 Task. WhenAny。异步任务不使用 AttachedToParent，但可以通过 await 另一个任务，建立一种隐 式的“父 / 子”关系。
 
