@@ -95,7 +95,7 @@ static void ProcessPartialArray(double[] array, int begin, int end)
 MSTest从Visual Studio2012 版本开始支持 async Task 类型的单元测试
 如果单元测试框架不支持 async Task 类型的单元测试，就需要做一些额外的修改才能等待异步操作。其中一种做法是使用 Task.Wait，并在有错误时拆开 AggregateException 对象。我的建议是使用 NuGet 包 Nito.AsyncEx 中的 AsyncContext 类
 这里附上一个ABP中实现的可操作AsyncHelper类，就是基于AsyncContext实现
-``` C#
+```C#
 
     /// <summary>
     /// Provides some helper methods to work with async methods.
@@ -152,7 +152,7 @@ ConcurrentDictionary 内置了AddOrUpdate, TryRemove, TryGetValue等方法。如
 可以用await等待的是一个类（如Task 对象），而不是一个方法。可以用await等待某个方法返回的Task，无论它是不是async方法。
 
 类的构造函数里是不能进行异步操作的，一般可以使用如下方法。相应的，我们可以通过
-{% highlight C# %}
+``` C#
 var instance=new Program.CreateAsync();
 
     class Program
@@ -177,7 +177,7 @@ var instance=new Program.CreateAsync();
         }
 
     }
-{% endhighlight %}
+```
 在编写异步事件处理器时，事件参数类最好是线程安全的。要做到这点，最简单的办法就 是让它成为不可变的（即把所有的属性都设为只读）
 
 ## 同步
