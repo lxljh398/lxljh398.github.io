@@ -188,7 +188,7 @@ var instance=new Program.CreateAsync();
 这几段代码在访问（读或写）同一个数据
 至少有一段代码在修改（写）数据
 观察以下代码，确定其同步和运行状态
-``` C#
+```java
 class SharedData
 {
     public int Value { get; set; }
@@ -233,7 +233,7 @@ async Task<int> ModifyValueConcurrentlyAsync()
 ## 实用技巧
 
 程序的多个部分共享了一个资源，现在要在第一次访问该资源时对它初始化
-``` C#
+```java
 static int _simpleValue;
 static readonly Lazy<Task<int>> MySharedAsyncInteger = 
     new Lazy<Task<int>>(() => 
