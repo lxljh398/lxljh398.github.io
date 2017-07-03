@@ -20,7 +20,7 @@ Installs and uninstalls executable services and assigns names to them.
 显而易见，这个小工具是用以安装和卸载可执行的服务和指派服务名给这些可执行的服务的。
 那么怎么去使用呢？这里我们设定要将F:\cpu.exe 以 CPUSrv 的名称显示作为服务的话，我们应当这样子做：
 先将instsrv.exe放入任意目录，我们有两种办法来执行这个命令
-+ CMD法
+### CMD法
 + 1、单击『开始』菜单中的【运行】并键入“cmd”（不包括双引号）后单击【确定】按钮
 
 + 2、在CMD中使用 cd 命令进入 instsrv.exe 所在目录或者直接输入 instsrv.exe 具体路径。比如 instsrv.exe 在F:\Tools目录下的话，我们应该这样子做：
@@ -39,7 +39,7 @@ Installs and uninstalls executable services and assigns names to them.
 键入 sc config CPUSrv start= demand   手动启动方式
 键入 sc config CPUSrv start= disabled 已禁止启动方式
  
-+ GUI法
+### GUI法
 + 1、单击『开始』菜单中的【运行】
 + 2、在【运行】文本框中键入
 f:\tools\instsrv.exe CPUSrv f:\cpu.exe
