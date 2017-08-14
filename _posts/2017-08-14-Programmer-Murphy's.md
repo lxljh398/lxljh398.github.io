@@ -1,10 +1,10 @@
 ﻿---
 layout: post
 title: "程序员墨菲法则汇总"
-date: 2017-08-14 19:11:05
-categories: 趣味
-tags: Debug 墨菲定律
-excerpt: 在工作中常常会在项目上线的时候出现各种这样那样的问题，这里大概趣味一下。
+date: 2017-07-25 15:06:05
+categories: 能力提升
+tags: 个人
+excerpt: 想要提升指教，从戒掉浮躁开始.
 author: fatso
 ---
 
