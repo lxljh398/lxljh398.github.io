@@ -12,10 +12,10 @@ author: fatso
 {:toc}
 
 
-## offset and fetch
+# offset and fetch
 在sql分页中常用的就是ROW_NUMBER() ，在sql2012中推出新的特性offset and fetch，这里做一对比
 
-### 方法一：ROW_NUMBER() 
+## 方法一：ROW_NUMBER() 
 
 在 Sql Server 2000 之后的版本中，ROW_NUMBER() 这种分页方式一直都是很不错的，比起之前的游标分页，性能好了很多，因为 ROW_NUMBER() 并不会引起全表扫表，但是，语法比较复杂，并且，随着页码的增加，性能也越来越差。 
 
@@ -34,7 +34,7 @@ drop table #temp_users
 
 
 
-### 方法二：offset and fetch
+## 方法二：offset and fetch
 
 在Sql Server 2012 中 offset and fetch 的新特性，发现 offset and fetch 无论语法的简洁还是功能的强大，都是相当相当不错的。
 
