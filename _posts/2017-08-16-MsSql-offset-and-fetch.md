@@ -15,14 +15,15 @@ author: fatso
 ## offset and fetch
 在sql分页中常用的就是ROW_NUMBER() ，在sql2012中推出新的特性offset and fetch，这里做一对比
 
-方法一：ROW_NUMBER() 
+### 方法一：ROW_NUMBER() 
 
 在 Sql Server 2000 之后的版本中，ROW_NUMBER() 这种分页方式一直都是很不错的，比起之前的游标分页，性能好了很多，因为 ROW_NUMBER() 并不会引起全表扫表，但是，语法比较复杂，并且，随着页码的增加，性能也越来越差。 
-语法 ：
+
+#### 语法 ：
 ``` sql
 ROW_NUMBER ( ) OVER ( [ PARTITION BY value_expression , ... [ n ] ] order_by_clause )
 ```
-实例：
+#### 实例：
 ``` sql
 select *,ROW_NUMBER() OVER(Order By ID) as rowid into #temp_users from [AlphaWallet.Api_Main_Stress].[dbo].[Users] 
 
@@ -33,7 +34,7 @@ drop table #temp_users
 
 
 
-方法二：offset and fetch
+### 方法二：offset and fetch
 
 在Sql Server 2012 中 offset and fetch 的新特性，发现 offset and fetch 无论语法的简洁还是功能的强大，都是相当相当不错的。
 
@@ -41,7 +42,7 @@ drop table #temp_users
 通过 OFFSET-FETCH 子句，您可以从结果集中仅提取某个时间范围或某一页的结果。OFFSET-FETCH 只能与 ORDER BY 子句一起使用。
 
 
-语法 ：
+#### 语法 ：
 ``` sql
 1.[ORDER BY { order_by_expression [ ASC | DESC ] } [ ,...n][<offset_fetch>] ]
 
@@ -60,7 +61,7 @@ drop table #temp_users
         TOP 不能在同一个查询表达式中与 OFFSET 和 FETCH 一起使用。
         OFFSET/FETCH 行计数表达式可以是将返回整数值的任何算术、常量或参数表达式。该行计数表达式不支持标量子查询。
 
-官方示例：
+#### 官方示例：
 
 下面的示例说明如何将 OFFSET-FETCH 子句与 ORDER BY 一起使用。
 示例 1- 从排序的结果集中跳过前 10 行并且返回剩余行。
@@ -73,7 +74,7 @@ SELECT First Name + ' ' + Last Name FROM Employees ORDER BY First Name OFFSET 10
 ```
 
 
-实例：
+#### 个人实例：
 ``` sql
 select * from [AlphaWallet.Api_Main_Stress].[dbo].[Users] order by id OFFSET 30 ROW FETCH NEXT 15 rows only
 ```
