@@ -2,8 +2,8 @@
 layout: post
 title: "offset and fetch 分页"
 date: 2017-08-16 15:06:05
-categories: MsSql
-tags: 新特性 优化 SQLServer
+分类: MsSql
+标签: 新特性 优化 SQLServer
 excerpt: offset and fetch 新特性的认识。
 author: fatso
 ---
