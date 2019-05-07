@@ -5,7 +5,7 @@ layout: default
 <div class="page clearfix" index>
     <div class="left">
         <h1>Welcome to fatso's Blog!</h1>
-        <small>这里记录着我学习之路，欢迎各位提出宝贵意见和建议</small>
+        <small>点点滴滴，随意，随性</small>
         <hr>
         <ul>
             {% for post in paginator.posts %}
@@ -37,7 +37,7 @@ layout: default
                     {{post.excerpt}}
                 </div>
                 <div class="read-all">
-                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>全文</a>
                 </div>
                 <hr>
               </li>
