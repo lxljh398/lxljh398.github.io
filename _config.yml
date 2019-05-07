@@ -25,8 +25,13 @@ description_footer: 本站记录我工作以及闲暇时光的沿途风景！
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #fatsoblogs
-disqus_shortname: fatso
+gitalk: true
+gitalk_clientID: '1196c76d3efa1a2e8e19'
+gitalk_Secret: 'f798165349919249704d11423faa89112e4e4b8e'
+gitalk_repo: 'https://lxljh398.github.io/'
+gitalk_owner: 'fatso'
+gitalk_admin: 'fatso'
+distractionFreeMode: true
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
