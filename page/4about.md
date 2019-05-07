@@ -31,6 +31,6 @@ type: page
 **若您想使用这个 jekyll 博客主题,请使用原作者模板，请访问：[https://github.com/Gaohaoyang/gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
 
 
-## Comments
+## 评论
 
 {% include comments.html %}
