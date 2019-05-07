@@ -33,4 +33,4 @@ type: page
 
 ## 评论
 
-{% include comments.html %}
+{% include gitalk.html %}

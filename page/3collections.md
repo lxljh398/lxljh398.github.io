@@ -292,4 +292,4 @@ Syntax Theme: Atom Dark or One Dark
 
 ## 评论
 
-{% include comments.html %}
+{% include gitalk.html %}
