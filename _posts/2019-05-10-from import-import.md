@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python的from import和import的区别"
-date: 2017-06-30 14:06:05
+date: 2019-05-10
 categories: Python
 tags: Python-100Days Basis
 excerpt: 在Python环境中经常会引入一些包，使用到import +包名，我们在一些代码中也会经常看到 from import +包名的使用，对于初学者就稍微有点不太理解了，我们就在这里简单的对这两种引用包方式做一介绍。
