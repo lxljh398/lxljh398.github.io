@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL 的最大连接数"
-date: 2017-07-19 10:06:05
+date: 2017-07-19
 categories: MySql
 tags: 设置
 excerpt: 在大量用户访问并发情况下，如果只是单薄的服务器环境，会出现提示超出连接数。

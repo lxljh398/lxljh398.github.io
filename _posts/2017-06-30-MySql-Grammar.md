@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL 的工作中的常用语法"
-date: 2017-07-19 11:30:05
+date: 2017-07-19
 categories: MySql
 tags: 语法
 excerpt: 毕业后工作第一个项目用的是MySQL，随后一直没有用过，现在工作需要使用，感觉很陌生，重温下常用的语法，感觉和MSSql区别细微，还是自行整理下。
